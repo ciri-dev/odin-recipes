@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #0047AB;
+  --secondary-color: #4FAAFF;
+  --tertiary-color: #fff;
+  --neutral-color: #1E293B;
+  --title-font: "Ubuntu", sans-serif;
+  --subtitle-font: "Overpass", sans-serif;
+  --text-font: "Amiko", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #d1e4ff;
+  background-image: url("https://transparenttextures.com/patterns/skulls.png");
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: var(--subtitle-font);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--secondary-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card__body h4 {
+  font-family: var(--subtitle-font);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__body p {
+  font-family: var(--text-font);
+  font-size: 1rem;
+  color: var(--neutral-color);
+}
