@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #0047AB;
+  --secondary-color: #4FAAFF;
+  --tertiary-color: #fff;
+  --neutral-color: #1E293B;
+  --title-font: "Ubuntu", sans-serif;
+  --subtitle-font: "Overpass", sans-serif;
+  --text-font: "Amiko", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100dvh;
+  background-color: #d1e4ff;
+  background-image: url("https://transparenttextures.com/patterns/skulls.png");
+  padding: 0.5rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-family: var(--text-font);
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  /* text-align: center; */
+  gap: 1rem;
+}
+
+.header img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-style: italic;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--subtitle-font);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: var(--neutral-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.ingredients {
+  background-color: #9DCAFF;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-height: min-content;
+}
+
+.ingredients ul {
+  list-style: none;
+  font-family: var(--text-font);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: var(--neutral-color);
+}
+
+ol {
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  color: var(--neutral-color);
+  line-height: 1.5;
+}
+
+.steps {
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
